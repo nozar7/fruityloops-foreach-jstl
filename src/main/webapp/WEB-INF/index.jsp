@@ -6,10 +6,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Fruity Loops</title>
+<link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 	<h2>Fruit Store</h2>
-	<table style="width: 100%">
+	<table>
 		<tr>
 			<th>Name</th>
 			<th>Price</th>
@@ -22,11 +23,10 @@
 				</c:forEach></td>
 			<td><c:forEach var="fruta" items="${frutas}">
 					<p>
-						<c:out value="No. ${fruta.price}" />
+						<c:out value="${fruta.price}" />
 					</p>
 				</c:forEach></td>
 		</tr>
-
 	</table>
 
 </body>
